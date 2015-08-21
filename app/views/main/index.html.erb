@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>뭐한대?! - 소중규모 문화 플랫폼</title>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <%= render :partial => 'main/navbar' %>
+    <div class="margin" style="height: 50px; width: 100%"></div>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                   
+                    <div class="intro-text" style="background:rgba( 0, 0, 0, 0.7)">
+                        <span class="name" >오늘은 뭐한대?!</span>
+                        <hr class="star-light">
+                        <span class="skills">내 주변에서 열리는 1024개의 공연정보를 만나보세요</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3 style="color:block">오늘의 베스트  기대 공연</h3>
+                </div>
+            </div>
+            
+            <div class="row" style="margin:50px">
+               
+                <div class="col-sm-3 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                            
+                                <h3> 프로 공연자
+                                <h3><br>
+                                <h4>피아노치는 이정환</h4>
+                                <small> 4PM / 홍대 3번출구 홍익문고 앞 </small>
+                            </div>
+                        </div>
+                        <img src="http://scontent.xx.fbcdn.net/hphotos-xtf1/v/t1.0-9/11825834_1681441748755478_8043971275904280731_n.jpg?oh=66e1f4fdb6b460c0bd627985b371d54d&oe=5638D231" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-3 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <h3> 아마추어 동아리 <h3><br>
+                                <h4>알스아망디</h4>
+                                <small> 8PM / 한양대학교 노천극장 앞 </small>
+                            </div>
+                        </div>
+                        <img src="http://scontent.xx.fbcdn.net/hphotos-xta1/v/t1.0-9/11295585_455985867893193_6311888987607738688_n.jpg?oh=7d464d565f8fc74f6eb5e04ff3821a75&oe=5635E918" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-3 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <h3> 아마추어 공연자</h3><br>
+                                <h4> 누워서하는밴드 안병주 </h4>
+                                <small> 8AM / 성동구청 앞 작은무대 </small>
+                            </div>
+                        </div>
+                        <img src="https://scontent.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/10003329_506750726096814_546792248_n.jpg?oh=fa99ef7b14216232e6da6de0fbdf31c6&oe=5635B8ED" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-3 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <h3>프로 공연팀</h3><br>
+                                <h4> 브로콜리너마저 </h4>
+                                <small> 7PM / 신세계백화점 11층 </small>
+                            </div>
+                        </div>
+                        <img src="http://scontent.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/10408838_675098545952749_3804621669667567564_n.jpg?oh=f2b7fa25313ef5fdb41365816480adbc&oe=5670232E" class="img-responsive" alt="">
+                    </a>
+                </div>
+                
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3 style="color:block">오늘의 베스트 기대 팀</h3>
+                </div>
+            </div>
+            <div class="row" style="margin:50px">
+               
+                <div class="col-sm-3 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <h3>인디밴드 브로콜리 너마저</h3><br>
+                                <small> 7PM / 신세계백화점 11층 </small>
+                            </div>
+                        </div>
+                        <img src="http://scontent.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/419041_532718280099078_1342615655_n.jpg?oh=1be153d71acfd5de67eeff47df0769ef&oe=563AF891" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-3 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <h3>인디밴드 혁오밴드</h3><br>
+                                <small> 8PM / 홍대놀이터 게릴라</small>
+                            </div>
+                        </div>
+                        <img src="http://tv03.search.naver.net/thm?size=120x150&quality=9&q=http://sstatic.naver.net/people/portrait/201506/20150601105438464.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-3 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <h3>인디밴드 가을방학</h3><br>
+                                <small> 10PM / 성동구청 중극장 </small>
+                            </div>
+                        </div>
+                        <img src="http://tv03.search.naver.net/thm?size=120x150&quality=9&q=http://sstatic.naver.net/people/portrait/201406/20140627204737988-4516490.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-3 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <h3>사진작가 조선희</h3><br>
+                                <small> 8AM / 예술의전당 소극장 </small>
+                            </div>
+                        </div>
+                        <img src="http://tv03.search.naver.net/thm?size=120x150&quality=9&q=http://sstatic.naver.net/people/portrait/201207/20120719104001170.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="footer-col col-md-12">
+                        <h3>뭐한대?! 와 친구맺기</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        멋쟁이사자처럼 뭐한대?! 샘플페이지
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visible-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>피아노 치는 이정환</h2>
+                            <hr class="star-primary">
+                            <img src="http://scontent.xx.fbcdn.net/hphotos-xtf1/v/t1.0-9/11825834_1681441748755478_8043971275904280731_n.jpg?oh=66e1f4fdb6b460c0bd627985b371d54d&oe=5638D231" class="img-responsive img-centered" alt="">
+                            <h2> 오늘 공연은 "4PM"에 홍대 3번출구 홍익문고 앞 입니다</h2>
+                            <h3><a href="/main/map"> 지도 찾기 </a></h3>
+                            <p>피아노 치는 공대생 이정환입니다. 말이 필요없는 짱짱맨이죠.<br>
+YouTube : http://www.youtube.com/user/ImLlijah<br>
+E-mail : nightl@naver.com<br>
+elijah.pianoplayer@gmail.com<</p>
+                            <ul class="list-inline item-details">
+                                <li>
+                                    <strong><a href="/">이전공연 보기</a>
+                                    </strong>
+                                </li>
+                                <li>
+                                    <strong><a href="/">아티스트 정보</a>
+                                    </strong>
+                                </li>
+                                <li>
+                                    <strong><a href="/">공연 후기</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> 닫기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>피아노 치는 이정환</h2>
+                            <hr class="star-primary">
+                            <img src="http://scontent.xx.fbcdn.net/hphotos-xtf1/v/t1.0-9/11825834_1681441748755478_8043971275904280731_n.jpg?oh=66e1f4fdb6b460c0bd627985b371d54d&oe=5638D231" class="img-responsive img-centered" alt="">
+                            <h2> 오늘 공연은 "4PM"에 홍대 3번출구 홍익문고 앞 입니다</h2>
+                            <h3><a href="/main/map"> 지도 찾기 </a></h3>
+                            <p>피아노 치는 공대생 이정환입니다. 말이 필요없는 짱짱맨이죠.<br>
+YouTube : http://www.youtube.com/user/ImLlijah<br>
+E-mail : nightl@naver.com<br>
+elijah.pianoplayer@gmail.com<</p>
+                            <ul class="list-inline item-details">
+                                <li>
+                                    <strong><a href="/">이전공연 보기</a>
+                                    </strong>
+                                </li>
+                                <li>
+                                    <strong><a href="/">아티스트 정보</a>
+                                    </strong>
+                                </li>
+                                <li>
+                                    <strong><a href="/">공연 후기</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> 닫기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>피아노 치는 이정환</h2>
+                            <hr class="star-primary">
+                            <img src="http://scontent.xx.fbcdn.net/hphotos-xtf1/v/t1.0-9/11825834_1681441748755478_8043971275904280731_n.jpg?oh=66e1f4fdb6b460c0bd627985b371d54d&oe=5638D231" class="img-responsive img-centered" alt="">
+                            <h2> 오늘 공연은 "4PM"에 홍대 3번출구 홍익문고 앞 입니다</h2>
+                            <h3><a href="/main/map"> 지도 찾기 </a></h3>
+                            <p>피아노 치는 공대생 이정환입니다. 말이 필요없는 짱짱맨이죠.<br>
+YouTube : http://www.youtube.com/user/ImLlijah<br>
+E-mail : nightl@naver.com<br>
+elijah.pianoplayer@gmail.com<</p>
+                            <ul class="list-inline item-details">
+                                <li>
+                                    <strong><a href="/">이전공연 보기</a>
+                                    </strong>
+                                </li>
+                                <li>
+                                    <strong><a href="/">아티스트 정보</a>
+                                    </strong>
+                                </li>
+                                <li>
+                                    <strong><a href="/">공연 후기</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> 닫기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>피아노 치는 이정환</h2>
+                            <hr class="star-primary">
+                            <img src="http://scontent.xx.fbcdn.net/hphotos-xtf1/v/t1.0-9/11825834_1681441748755478_8043971275904280731_n.jpg?oh=66e1f4fdb6b460c0bd627985b371d54d&oe=5638D231" class="img-responsive img-centered" alt="">
+                            <h2> 오늘 공연은 "4PM"에 홍대 3번출구 홍익문고 앞 입니다</h2>
+                            <h3><a href="/main/map"> 지도 찾기 </a></h3>
+                            <p>피아노 치는 공대생 이정환입니다. 말이 필요없는 짱짱맨이죠.<br>
+YouTube : http://www.youtube.com/user/ImLlijah<br>
+E-mail : nightl@naver.com<br>
+elijah.pianoplayer@gmail.com<</p>
+                            <ul class="list-inline item-details">
+                                <li>
+                                    <strong><a href="/">이전공연 보기</a>
+                                    </strong>
+                                </li>
+                                <li>
+                                    <strong><a href="/">아티스트 정보</a>
+                                    </strong>
+                                </li>
+                                <li>
+                                    <strong><a href="/">공연 후기</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> 닫기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>피아노 치는 이정환</h2>
+                            <hr class="star-primary">
+                            <img src="http://scontent.xx.fbcdn.net/hphotos-xtf1/v/t1.0-9/11825834_1681441748755478_8043971275904280731_n.jpg?oh=66e1f4fdb6b460c0bd627985b371d54d&oe=5638D231" class="img-responsive img-centered" alt="">
+                            <h2> 오늘 공연은 "4PM"에 홍대 3번출구 홍익문고 앞 입니다</h2>
+                            <h3><a href="/main/map"> 지도 찾기 </a></h3>
+                            <p>피아노 치는 공대생 이정환입니다. 말이 필요없는 짱짱맨이죠.<br>
+YouTube : http://www.youtube.com/user/ImLlijah<br>
+E-mail : nightl@naver.com<br>
+elijah.pianoplayer@gmail.com<</p>
+                            <ul class="list-inline item-details">
+                                <li>
+                                    <strong><a href="/">이전공연 보기</a>
+                                    </strong>
+                                </li>
+                                <li>
+                                    <strong><a href="/">아티스트 정보</a>
+                                    </strong>
+                                </li>
+                                <li>
+                                    <strong><a href="/">공연 후기</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> 닫기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>피아노 치는 이정환</h2>
+                            <hr class="star-primary">
+                            <img src="http://scontent.xx.fbcdn.net/hphotos-xtf1/v/t1.0-9/11825834_1681441748755478_8043971275904280731_n.jpg?oh=66e1f4fdb6b460c0bd627985b371d54d&oe=5638D231" class="img-responsive img-centered" alt="">
+                            <h2> 오늘 공연은 "4PM"에 홍대 3번출구 홍익문고 앞 입니다</h2>
+                            <h3><a href="/main/map"> 지도 찾기 </a></h3>
+                            <p>피아노 치는 공대생 이정환입니다. 말이 필요없는 짱짱맨이죠.<br>
+YouTube : http://www.youtube.com/user/ImLlijah<br>
+E-mail : nightl@naver.com<br>
+elijah.pianoplayer@gmail.com<</p>
+                            <ul class="list-inline item-details">
+                                <li>
+                                    <strong><a href="/">이전공연 보기</a>
+                                    </strong>
+                                </li>
+                                <li>
+                                    <strong><a href="/">아티스트 정보</a>
+                                    </strong>
+                                </li>
+                                <li>
+                                    <strong><a href="/">공연 후기</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> 닫기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <!-- jQuery -->
+    <script src="/index/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/index/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="/index/js/classie.js"></script>
+    <script src="/index/js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="/index/js/jqBootstrapValidation.js"></script>
+    <script src="/index/js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/index/js/freelancer.js"></script>
+
+</body>
+
+</html>

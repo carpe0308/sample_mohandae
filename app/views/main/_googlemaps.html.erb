@@ -1,0 +1,78 @@
+<script type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDf12V_tv3Wi6XpwxIB7wMDyUseKJo8PfY">
+</script>
+<%= render :partial => 'main/infoWindow.html' %>
+<script type="text/javascript">
+  // In the following example, markers appear when the user clicks on the map.
+  // Each marker is labeled with a single alphabetical character.
+  
+  var markers = [];
+  var marker_index = 0;
+  
+  $(document).ready(function(){
+      function initialize() {
+      
+      var map = new google.maps.Map(document.getElementById('map-canvas'), {
+        zoom: 12,
+        center: center_default,
+        disableDoubleClickZoom : true,
+        minZoom: 12,
+        
+        scaleControl: true,
+        streetViewControl: true,
+        streetViewControlOptions: {
+            position: google.maps.ControlPosition.LEFT_BOTTOM
+        },
+        zoomControl: true,
+        zoomControlOptions: {
+            style: google.maps.ZoomControlStyle.LARGE,
+            position: google.maps.ControlPosition.LEFT_BOTTOM
+        }
+      });
+    
+      // This event listener calls addMarker() when the map is clicked.
+      /* google.maps.event.addListener(map, 'dblclick', function(event) {
+        addMarker(event.latLng, map);
+      });*/
+    
+      // Add a marker at the center of the map.
+      addMarker(ars_amandi, map);
+      addMarker(hana_clang, map);
+      addMarker(hanyang_ground, map);
+      addMarker(insa_ssamzi, map);
+      addMarker(sinchon_uplex, map);
+      
+      google.maps.event.addDomListener(map, 'click', function(){
+        $("#content-performance").html("");
+      });
+      
+      
+      // Adds a marker to the map.
+      function addMarker(location, map) {
+        // Add the marker at the clicked location, and add the next-available label
+        // from the array of alphabetical characters.
+        var index = marker_index;
+        
+        var marker = new google.maps.Marker({
+          position: location,
+          map: map
+        });
+        
+        markers.push(marker);
+        google.maps.event.addDomListener(marker, 'click', function(){
+          return $("#content-performance").html(infoWindow[index]);
+        });
+        marker_index++;
+      }
+      
+      
+      
+    }
+    
+    
+    google.maps.event.addDomListener(window, "load", initialize);
+    
+  });
+  
+</script>
+
